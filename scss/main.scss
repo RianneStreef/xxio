@@ -17,7 +17,7 @@
 }
 
 .index-wrapper {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 header {
@@ -372,6 +372,460 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  padding: 5px;
+}
+
+.index-wrapper {
+  background-color: #000000;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 15px;
+  min-height: 25px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+
+  a {
+    margin-left: 15px;
+  }
+  a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-right: 25px;
+  p {
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+h1,
+h2,
+h4 {
+  text-transform: uppercase;
+  margin: 15px 0 15px 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 0.9rem;
+  color: #808080;
+}
+
+.under-title {
+  color: #808080;
+}
+
+h3 {
+  color: #808080;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:active {
+  color: #000000;
+}
+
+p {
+  color: #808080;
+  line-height: 2;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+
+td {
+  color: #808080;
+  font-size: 0.8rem;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+  display: inline;
+}
+
+.p-list {
+  color: #808080;
+  line-height: 2;
+  font-size: 0.8rem;
+}
+
+.header-img {
+  width: 100%;
+  margin-top: 20px;
+}
+.header-img-main {
+  width: 100%;
+  padding: 5px 5px 0 5px;
+}
+
+main {
+  margin: 5px;
+}
+
+.index-main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.category {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-card {
+  margin: 0;
+}
+
+.h2-categories {
+  background-color: #000000;
+  padding: 5px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.cat-img {
+  display: block;
+  max-width: 100%;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 20px 0;
+}
+
+.icon-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.options {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.product-img {
+  width: 100px;
+  height: 100px;
+}
+
+.product-details-img {
+  width: 100%;
+}
+
+.product-name {
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.img-tech {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+table {
+  border: 0.5px solid #c5c4c4;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.product-details {
+  color: #808080;
+  line-height: 1.5;
+}
+
+.img-spec {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.price {
+  margin-top: 100px;
+}
+
+footer {
+  width: 100%;
+  margin: 5px;
+  grid-template-columns: repeat(2, 1fr);
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* image slider */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 25px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* responsive */
+
+// @media only screen and (min-width: 768px) {
+//   .h2-categories {
+//     font-size: 1.4rem;
+//   }
+// }
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    width: 900px;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .responsive {
+    min-height: 100%;
+    min-width: 100%;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+  }
+
+  nav {
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+  }
+
+  .icon-container {
+    font-size: 3.8;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .h2-categories {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  .name p {
+    font-size: 1.7rem;
+  }
+
+  .header-img {
+    margin-top: 47px;
+  }
+
+  .prev {
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
