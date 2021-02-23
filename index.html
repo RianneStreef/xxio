@@ -3,52 +3,51 @@
   <head>
     <meta charset="UTF-8" / >
     <meta name="robots" content="noindex" />
+    <meta name="robots" content="nofollow" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
-    <title>XXIO</title>
+    <title>XXIO EU & UK Catalogue</title>
     <link rel="icon" href="./img/favico.ico" />
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <script src="./src/app.js"></script>
   </head>
   <body>
-    <div class="wrapper index-wrapper">
-      <header>
-        <img src="./img/logo.jpg" class="header-img-main" />
-      </header>
-      <main>
-        <div class="index-main">
-          <a href="./categories/eleven.html" class="category-card">
-            <div class="category">
-              <h2 class="h2-categories">XXIO Eleven</h2>
-              <img src="./img/main-eleven.jpg" class="cat-img" />
-            </div>
-          </a>
-          <a href="./categories/eks.html" class="category-card">
-            <div class="category">
-              <h2 class="h2-categories">XXIO eks</h2>
-              <img src="./img/main-eks.jpg" class="cat-img" />
-            </div>
-          </a>
-          <a href="./categories/prime.html" class="category-card">
-            <div class="category">
-              <h2 class="h2-categories">XXIO prime</h2>
-              <img src="./img/main-prime.jpg" class="cat-img" />
-            </div>
-          </a>
-          <a href="./categories/forged.html" class="category-card">
-            <div class="category">
-              <h2 class="h2-categories">XXIO prime royal edition</h2>
-              <img src="./img/main-prime-re.jpg" class="cat-img" />
-            </div>
-          </a>
-          <a href="./categories/accessories.html" class="category-card">
-            <div class="category">
-              <h2 class="h2-categories">accessories</h2>
-              <img src="./img/main-accessories.jpg" class="cat-img" />
-            </div>
-          </a>
+    <div class="loader" id="loader">
+      <div class="loader-container">
+        <div class="lds-default">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      </main>
+      </div>
     </div>
+    <script>
+      setTimeout(function () {
+        window.location.href = "./categories.html";
+      }, 2500);
+    </script>
+    <script>
+      const loader = document.getElementById("loader");
+
+      setTimeout(() => loader.classList.add("fade-in"), 100);
+      setTimeout(() => loader.classList.add("fade-out"), 2000);
+      setTimeout(() => loader.classList.remove("fade-in"), 2000);
+    </script>
+    <script src="./src/a2hs.js"></script>
   </body>
 </html>
