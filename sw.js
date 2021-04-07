@@ -1,7 +1,12 @@
 console.log("service worker running");
 
-var cacheName = "/xxio-v2";
-var contentToCache = ["../index.html", "../categories.html"];
+var cacheName = "/xxio-v3";
+var contentToCache = [];
+
+caches.keys().then(function (names) {
+  for (let name of names) caches.delete(name);
+  console.log("caches deleted");
+});
 
 self.addEventListener("install", (e) => {
   console.log("[Service Worker] Install");

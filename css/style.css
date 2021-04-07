@@ -344,7 +344,8 @@ ul {
 
 ul li {
   text-transform: lowercase;
-  font-size: 0.8rem;
+  color: #808080;
+  line-height: 1.6rem;
 }
 
 .options {
