@@ -1,6 +1,6 @@
 console.log("service worker running");
 
-var cacheName = "/xxio-v3.3";
+var cacheName = "/xxio-v3.5";
 var contentToCache = [];
 
 caches.keys().then(function (names) {
