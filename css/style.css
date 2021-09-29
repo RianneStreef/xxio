@@ -628,5 +628,37 @@ footer h3 {
     margin-left: auto;
   }
 }
+.flag-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.flag-link {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.demo-day-links {
+  margin-top: 20px;
+}
+
+.demo-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator {
+  border: solid 1px #808080;
+  margin-bottom: 30px;
+}
+
+.demo-day-texts {
+  margin-top: 80px;
+}
 
 /*# sourceMappingURL=style.css.map */
